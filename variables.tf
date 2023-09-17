@@ -1,3 +1,8 @@
+variable "service_control_policy_name" {
+  type        = any
+  description = "Name of the combined Service Control Policy"
+}
+
 variable "service_control_policy_statements" {
   type        = any
   description = "List of Service Control Policy statements"
