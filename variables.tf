@@ -14,7 +14,7 @@ variable "service_control_policy_description" {
   description = "Description of the combined Service Control Policy"
 }
 
-variable "target_id" {
-  type        = string
-  description = "The unique identifier (ID) of the organization root, organizational unit, or account number that you want to attach the policy to"
+variable "target_ids" {
+  type        = list(string)
+  description = "A list of unique identifier (ID) of the organization root, organizational unit, or account number that you want to attach the policy to"
 }
